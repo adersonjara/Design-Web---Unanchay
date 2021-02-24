@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+:root {
+	--color-principal: #0b7e90;
+	--color-hover: #11cbe8;
+	--color-seccion: #05444e;
+}
+
+body{
+	font-family: 'Montserrat', sans-serif;
+	/* font-family: 'Lato', sans-serif; */
+}
+
+h2{
+	font-size: 30px;
+	font-weight: 700;
+}
+
+h3{
+	font-size: 18px;
+	font-weight: 700;
+}
+
+p{
+	font-size: 16px;
+}
+
+.btn-danger{
+	color: #fff;
+	background-color: var(--color-principal)!important;
+	border-color: var(--color-principal)!important;
+}
+
+.btn-danger:hover{
+	color: #fff;
+	background-color: var(--color-hover)!important;
+	border-color: var(--color-hover)!important;
+}
+
+/* Navbar */
+.bg-dark {
+    background-color: var(--color-principal)!important;
+}
+
+.navbar-dark .navbar-brand {
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 13px;
+    letter-spacing: 2px;
+    padding-left: 15px;
+}
+
+/* Portada */
+.imagen-portada {
+	background-image: url(../img/pexels-andrea-piacquadio-840996.jpg);
+	background-position: center center;
+	background-size: cover;
+}
+
+.imagen-portada:before {
+	background-color: rgba(0,0,0,0.8)!important;
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.texto-portada {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+}
+
+.texto-portada h1{
+	font-size: 80px;
+	font-weight: 700;
+	letter-spacing: 5px;
+	margin: 0;
+}
+
+.texto-portada p{
+	font-size: 13px;
+	letter-spacing: 3px;
+	margin-bottom: 30px;
+}
+
+.rounded-pill{
+	padding: 5px 50px;
+}
+
+.btn-outline-danger{
+	border-color: var(--color-principal)!important;
+	color: var(--color-principal)!important;
+}
+
+.btn-outline-danger:hover{
+	color: #fff!important;
+	background: var(--color-hover)!important;
+	border-color: var(--color-principal)!important;
+}
+
+/* Seccion */
+.seccion{
+	font-family: 'Lato', sans-serif;
+	padding: 100px 0px;
+}
+
+.bg-seccion{
+	background-color: var(--color-seccion)!important;
+}
+
+
+/* Nosotros */
+.nosotros h3{
+	font-size: 25px;
+	font-weight: 400;
+	color: var(--color-principal)!important;
+	padding-bottom: 30px;
+	letter-spacing: 1px;
+	word-spacing: 3px;
+}
+
+.parrafo{
+	letter-spacing: 1px;
+	line-height: 25px;
+}
+
+.icono{
+	font-size: 130px;
+	color: var(--color-principal)!important;
+}
+
+.icono-numero{
+	font-size: 30px;
+	color: #9e9e9e;
+}
+
+
+/* Equipo */
+.equipo-redes ul{
+	padding: 0;
+	margin: 0;
+}
+
+.equipo-redes ul li{
+	display: inline-block;
+	margin: 5px;
+}
+
+.equipo-redes ul li a{
+	background-color: var(--color-principal)!important;
+	color: #fff;
+	display: block;
+	padding: 10px;
+	width: 50px;
+}
+
+.equipo-redes ul li a:hover{
+	background-color: var(--color-hover)!important;
+}
+
+/* Precios */
+.precio{
+	padding: 30px 40px;
+}
+
+.precio h3{
+	border-bottom: 2px dashed var(--color-seccion)!important;
+	padding-bottom: 10px;
+}
+
+.precio h2{
+	margin: 30px 0px;
+	font-size: 50px;
+	font-weight: normal;
+}
+
+.precio p{
+	border-bottom: 1px dashed var(--color-seccion)!important;
+	margin-bottom: 30px;
+}
+
+/* Contáctanos */
+.informes span{
+	font-size: 50px;
+	color: var(--color-seccion)!important;
+}
+
+.informes p{
+	font-size: 20px;
+}
+
+/* Footer */
+footer a{
+	color: #fff;
+	font-size: 16px;
+}
+footer a:hover{
+	color: var(--color-seccion)!important;
+}
+
+/* Extra small devices (portrait phones, less than 576px - col-#) */
+@media (max-width: 575.98px) {
+	.seccion{
+		padding: 60px 0px;
+	}
+	.texto-portada {
+	    top: 35%;
+	} 
+	.texto-portada h1 {
+    	font-size: 40px;
+	}
+	.texto-portada p{
+	    letter-spacing: 1px;
+	    margin-bottom: 20px;
+	    margin-top: 30px;
+	}
+	.rounded-pill{
+		padding: 5px 35px;
+	}
+
+	.display-4{
+		font-size: 40px;
+	}
+	.icono{
+		font-size: 60px;
+	}
+
+}
+
+/* Small devices (landscape phones, 576px and up - col-sm-# ) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+	.seccion{
+		padding: 60px 0px;
+	}
+	.texto-portada {
+	    top: 45%;
+	} 
+	.texto-portada h1 {
+    	font-size: 45px;
+	}
+	.texto-portada p{
+		font-size: 10px;
+	    margin-bottom: 20px;
+	    margin-top: 10px;
+	}
+	.icono{
+		font-size: 60px;
+	}
+}
+
+/* Medium devices (tablets, 768px and up - col-md-# ) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+	.seccion{
+		padding: 80px 0px;
+	}
+	.texto-portada {
+	    top: 45%;
+	} 
+	.texto-portada h1 {
+    	font-size: 65px;
+	}
+	.equipo-redes ul li {
+	    margin: 1px;
+	}
+	.precio h2 {
+	    margin: 20px 0px;
+	    font-size: 36px;
+	}
+	.centrar-texto{
+		text-align: center;
+	}
+}
+
